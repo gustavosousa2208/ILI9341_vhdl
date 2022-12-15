@@ -39,8 +39,8 @@ Processing 'memoria_para_display(spi_input_clock=100000000,spi_output_clock=1000
 Processing 'divisor(input_clock=100000000,output_clock=100000000)(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
 Processing 'gato_colorido(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
 Processing 'sprites(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd":12)
-WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":145)
-WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":201)
+WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":147)
+WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":203)
 NOTE  (EX0101) : Current top module is "top_gowin_ide"
 WARN  (EX0211) : The output port "reset" of module "spi_transmissao_byte" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":10)
 WARN  (EX0211) : The output port "led_writing" of module "top_gowin_ide" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)

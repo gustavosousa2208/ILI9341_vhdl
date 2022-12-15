@@ -6,6 +6,10 @@
 -bit
 -tr
 -ph
+-sdf
+-ibs
+-posp
+-warning_all
 -timing
 -cst_error
 -route_maxfan 23
