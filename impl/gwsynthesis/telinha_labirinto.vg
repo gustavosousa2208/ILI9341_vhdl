@@ -1,20 +1,20 @@
 //
 //Written by GowinSynthesis
 //Product Version "GowinSynthesis V1.9.8.07"
-//Thu Dec 15 12:37:11 2022
+//Thu Dec 15 14:51:05 2022
 
 //Source file index table:
 //file0 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_dpb/gowin_dpb.v"
 //file1 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.v"
 //file2 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/comandos_sequencia.vhd"
 //file3 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/divisor.vhd"
-//file4 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd"
-//file5 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/sprites.vhd"
-//file6 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_rpll/gowin_rpll.vhd"
-//file7 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd"
-//file8 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd"
-//file9 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd"
-//file10 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd"
+//file4 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd"
+//file5 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd"
+//file6 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/sprites.vhd"
+//file7 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_rpll/gowin_rpll.vhd"
+//file8 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd"
+//file9 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd"
+//file10 "\C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd"
 `timescale 100 ps/100 ps
 module Gowin_rPLL (
   sys_clk_d,
@@ -489,24 +489,24 @@ output estados;
 output cs;
 output sck_div;
 wire n162_3;
-wire n33_34;
-wire n35_33;
-wire n36_33;
-wire n38_33;
+wire n37_34;
 wire n39_33;
-wire n40_45;
-wire n34_27;
-wire n37_17;
-wire n83_5;
-wire n29_10;
-wire n28_8;
+wire n40_33;
+wire n42_33;
+wire n43_33;
+wire n44_45;
+wire n38_27;
+wire n41_17;
+wire n87_5;
+wire n33_10;
+wire n32_8;
 wire n162_4;
 wire started_21;
-wire n85_6;
-wire n59_5;
-wire n30_16;
+wire n89_6;
+wire n63_5;
+wire n34_16;
 wire n171_6;
-wire n31_12;
+wire n35_12;
 wire GO;
 wire btn_on;
 wire started;
@@ -517,94 +517,94 @@ wire GND;
   LUT2 n162_s0 (
     .F(n162_3),
     .I0(n162_4),
-    .I1(n85_6) 
+    .I1(n89_6) 
 );
 defparam n162_s0.INIT=4'h4;
-  LUT4 n33_s23 (
-    .F(n33_34),
+  LUT4 n37_s23 (
+    .F(n37_34),
     .I0(\troca_comando.count [1]),
     .I1(\troca_comando.count [0]),
     .I2(\troca_comando.count [2]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n33_s23.INIT=16'h04CA;
-  LUT4 n35_s22 (
-    .F(n35_33),
+defparam n37_s23.INIT=16'h04CA;
+  LUT4 n39_s22 (
+    .F(n39_33),
     .I0(\troca_comando.count [1]),
     .I1(\troca_comando.count [0]),
     .I2(\troca_comando.count [2]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n35_s22.INIT=16'h0D74;
-  LUT4 n36_s22 (
-    .F(n36_33),
+defparam n39_s22.INIT=16'h0D74;
+  LUT4 n40_s22 (
+    .F(n40_33),
     .I0(\troca_comando.count [0]),
     .I1(\troca_comando.count [2]),
     .I2(\troca_comando.count [1]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n36_s22.INIT=16'h1E44;
-  LUT3 n38_s22 (
-    .F(n38_33),
+defparam n40_s22.INIT=16'h1E44;
+  LUT3 n42_s22 (
+    .F(n42_33),
     .I0(\troca_comando.count [1]),
     .I1(\troca_comando.count [2]),
     .I2(\troca_comando.count [3]) 
 );
-defparam n38_s22.INIT=8'h14;
-  LUT4 n39_s22 (
-    .F(n39_33),
+defparam n42_s22.INIT=8'h14;
+  LUT4 n43_s22 (
+    .F(n43_33),
     .I0(\troca_comando.count [0]),
     .I1(\troca_comando.count [1]),
     .I2(\troca_comando.count [2]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n39_s22.INIT=16'h1370;
-  LUT4 n40_s31 (
-    .F(n40_45),
+defparam n43_s22.INIT=16'h1370;
+  LUT4 n44_s31 (
+    .F(n44_45),
     .I0(\troca_comando.count [3]),
     .I1(\troca_comando.count [0]),
     .I2(\troca_comando.count [2]),
     .I3(\troca_comando.count [1]) 
 );
-defparam n40_s31.INIT=16'h42BC;
-  LUT4 n34_s19 (
-    .F(n34_27),
+defparam n44_s31.INIT=16'h42BC;
+  LUT4 n38_s19 (
+    .F(n38_27),
     .I0(\troca_comando.count [2]),
     .I1(\troca_comando.count [0]),
     .I2(\troca_comando.count [1]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n34_s19.INIT=16'h1408;
-  LUT3 n37_s10 (
-    .F(n37_17),
+defparam n38_s19.INIT=16'h1408;
+  LUT3 n41_s10 (
+    .F(n41_17),
     .I0(\troca_comando.count [0]),
     .I1(\troca_comando.count [1]),
     .I2(\troca_comando.count [2]) 
 );
-defparam n37_s10.INIT=8'h42;
-  LUT4 n83_s1 (
-    .F(n83_5),
+defparam n41_s10.INIT=8'h42;
+  LUT4 n87_s1 (
+    .F(n87_5),
     .I0(started),
     .I1(lock),
     .I2(top_cs_d_4),
     .I3(n162_4) 
 );
-defparam n83_s1.INIT=16'hFFF2;
-  LUT3 n29_s4 (
-    .F(n29_10),
+defparam n87_s1.INIT=16'hFFF2;
+  LUT3 n33_s4 (
+    .F(n33_10),
     .I0(\troca_comando.count [0]),
     .I1(\troca_comando.count [1]),
     .I2(\troca_comando.count [2]) 
 );
-defparam n29_s4.INIT=8'hE1;
-  LUT4 n28_s3 (
-    .F(n28_8),
+defparam n33_s4.INIT=8'hE1;
+  LUT4 n32_s3 (
+    .F(n32_8),
     .I0(\troca_comando.count [0]),
     .I1(\troca_comando.count [1]),
     .I2(\troca_comando.count [2]),
     .I3(\troca_comando.count [3]) 
 );
-defparam n28_s3.INIT=16'hFE01;
+defparam n32_s3.INIT=16'hFE01;
   LUT4 n162_s1 (
     .F(n162_4),
     .I0(\troca_comando.count [0]),
@@ -621,98 +621,104 @@ defparam n162_s1.INIT=16'h0001;
     .I3(GO) 
 );
 defparam started_s12.INIT=16'h4F00;
-  LUT4 n85_s2 (
-    .F(n85_6),
+  LUT4 n89_s2 (
+    .F(n89_6),
     .I0(lock),
     .I1(cs),
     .I2(estados),
     .I3(GO) 
 );
-defparam n85_s2.INIT=16'h4500;
-  LUT3 n59_s1 (
-    .F(n59_5),
+defparam n89_s2.INIT=16'h4500;
+  LUT3 n63_s1 (
+    .F(n63_5),
     .I0(n162_4),
     .I1(started),
-    .I2(n85_6) 
+    .I2(n89_6) 
 );
-defparam n59_s1.INIT=8'h20;
-  LUT4 n30_s6 (
-    .F(n30_16),
+defparam n63_s1.INIT=8'h20;
+  LUT4 n34_s6 (
+    .F(n34_16),
     .I0(\troca_comando.count [1]),
     .I1(\troca_comando.count [0]),
     .I2(started),
-    .I3(n85_6) 
+    .I3(n89_6) 
 );
-defparam n30_s6.INIT=16'hA9AA;
+defparam n34_s6.INIT=16'hA9AA;
   LUT2 n171_s1 (
     .F(n171_6),
     .I0(started),
-    .I1(n85_6) 
+    .I1(n89_6) 
 );
 defparam n171_s1.INIT=4'h4;
-  LUT3 n31_s6 (
-    .F(n31_12),
+  LUT3 n35_s6 (
+    .F(n35_12),
     .I0(\troca_comando.count [0]),
     .I1(started),
-    .I2(n85_6) 
+    .I2(n89_6) 
 );
-defparam n31_s6.INIT=8'h9A;
+defparam n35_s6.INIT=8'h9A;
+  DFFE command_to_send_8_s0 (
+    .Q(command_to_send[8]),
+    .D(n37_34),
+    .CLK(sys_clk_d),
+    .CE(n162_3) 
+);
   DFFE command_to_send_6_s0 (
     .Q(command_to_send[6]),
-    .D(n34_27),
+    .D(n38_27),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_5_s0 (
     .Q(command_to_send[5]),
-    .D(n35_33),
+    .D(n39_33),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_4_s0 (
     .Q(command_to_send[4]),
-    .D(n36_33),
+    .D(n40_33),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_3_s0 (
     .Q(command_to_send[3]),
-    .D(n37_17),
+    .D(n41_17),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_2_s0 (
     .Q(command_to_send[2]),
-    .D(n38_33),
+    .D(n42_33),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_1_s0 (
     .Q(command_to_send[1]),
-    .D(n39_33),
+    .D(n43_33),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFE command_to_send_0_s0 (
     .Q(command_to_send[0]),
-    .D(n40_45),
+    .D(n44_45),
     .CLK(sys_clk_d),
     .CE(n162_3) 
 );
   DFFSE \troca_comando.count_3_s0  (
     .Q(\troca_comando.count [3]),
-    .D(n28_8),
+    .D(n32_8),
     .CLK(sys_clk_d),
     .CE(n171_6),
-    .SET(n59_5) 
+    .SET(n63_5) 
 );
 defparam \troca_comando.count_3_s0 .INIT=1'b1;
   DFFSE \troca_comando.count_2_s0  (
     .Q(\troca_comando.count [2]),
-    .D(n29_10),
+    .D(n33_10),
     .CLK(sys_clk_d),
     .CE(n171_6),
-    .SET(n59_5) 
+    .SET(n63_5) 
 );
 defparam \troca_comando.count_2_s0 .INIT=1'b1;
   DFF GO_s0 (
@@ -721,15 +727,9 @@ defparam \troca_comando.count_2_s0 .INIT=1'b1;
     .CLK(start_d) 
 );
 defparam GO_s0.INIT=1'b0;
-  DFFE command_to_send_8_s0 (
-    .Q(command_to_send[8]),
-    .D(n33_34),
-    .CLK(sys_clk_d),
-    .CE(n162_3) 
-);
   DFFSE btn_on_s1 (
     .Q(btn_on),
-    .D(n83_5),
+    .D(n87_5),
     .CLK(sys_clk_d),
     .CE(started_21),
     .SET(GND) 
@@ -739,28 +739,28 @@ defparam btn_on_s1.INIT=1'b1;
     .Q(lock),
     .D(VCC),
     .CLK(sys_clk_d),
-    .CE(n59_5) 
+    .CE(n63_5) 
 );
 defparam lock_s4.INIT=1'b0;
   DFFE started_s9 (
     .Q(started),
-    .D(n85_6),
+    .D(n89_6),
     .CLK(sys_clk_d),
     .CE(started_21) 
 );
 defparam started_s9.INIT=1'b0;
   DFFR \troca_comando.count_1_s1  (
     .Q(\troca_comando.count [1]),
-    .D(n30_16),
+    .D(n34_16),
     .CLK(sys_clk_d),
-    .RESET(n59_5) 
+    .RESET(n63_5) 
 );
 defparam \troca_comando.count_1_s1 .INIT=1'b0;
   DFFS \troca_comando.count_0_s1  (
     .Q(\troca_comando.count [0]),
-    .D(n31_12),
+    .D(n35_12),
     .CLK(sys_clk_d),
-    .SET(n59_5) 
+    .SET(n63_5) 
 );
 defparam \troca_comando.count_0_s1 .INIT=1'b1;
   spi_transmissao_byte spi0 (

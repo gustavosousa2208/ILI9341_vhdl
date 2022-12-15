@@ -20,6 +20,11 @@
   },
   {
    "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
    "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd",
    "Type" : "vhdl"
   },
@@ -46,11 +51,6 @@
   {
    "Library" : "work",
    "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
-   "Type" : "vhdl"
-  },
-  {
-   "Library" : "work",
-   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd",
    "Type" : "vhdl"
   }
  ],

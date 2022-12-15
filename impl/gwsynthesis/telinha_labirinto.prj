@@ -8,13 +8,13 @@
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.v" type="verilog"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd" type="vhdl"/>
         <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd" type="vhdl"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>

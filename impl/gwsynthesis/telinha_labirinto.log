@@ -5,10 +5,13 @@ Analyzing Verilog file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\teli
 Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd'
 Analyzing entity 'comandos_sequencia'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":6)
 Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":14)
-WARN  (EX4664) : Formal port 'cs_out' of mode 'out' cannot be associated with actual port 'cs_out' of mode 'buffer'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":35)
+WARN  (EX4664) : Formal port 'cs_out' of mode 'out' cannot be associated with actual port 'cs_out' of mode 'buffer'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":38)
 Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd'
 Analyzing entity 'divisor'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
 Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":17)
+Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd'
+Analyzing entity 'gato_colorido'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
+Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":23)
 Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd'
 Analyzing entity 'gowin_prom'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd":12)
 Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd":23)
@@ -27,9 +30,6 @@ Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartu
 Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd'
 Analyzing entity 'top_gowin_ide'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":5)
 Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":16)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd'
-Analyzing entity 'gato_colorido'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
-Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":23)
 Processing 'top_gowin_ide(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":5)
 Processing 'Gowin_rPLL(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd":12)
 Processing 'comandos_sequencia(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":6)

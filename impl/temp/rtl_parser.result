@@ -49,7 +49,7 @@
     "SubInsts" : [
      {
       "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/comandos_sequencia.vhd",
-      "InstLine" : 34,
+      "InstLine" : 37,
       "InstName" : "spi0",
       "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd",
       "ModuleLine" : 6,

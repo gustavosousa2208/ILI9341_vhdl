@@ -13,7 +13,7 @@ entity spi_transmissao_byte is
 end entity;
 
 architecture rtl of spi_transmissao_byte is
-	-- declaracao de coponente
+	-- declaracao de componente
 	component divisor is 
         generic(input_clock : integer := clock_in; output_clock : integer := clock_out);
         port(clk_in : in std_logic; clk_out : out std_logic);
