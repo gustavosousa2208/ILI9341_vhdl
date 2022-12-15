@@ -8,11 +8,11 @@ Running placement......
 [20%] Placement Phase 1 completed
 [30%] Placement Phase 2 completed
 WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_entrada_fim_jogo"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n258_6"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n245_6"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "s_clock_3" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_clock_3"
 WARN  (TA1117) : Can't calculate clocks' relationship between: "s_entrada_fim_jogo" and "pll/rpll_inst/CLKOUT.default_gen_clk"
-WARN  (TA1117) : Can't calculate clocks' relationship between: "n874_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "n861_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 [50%] Placement Phase 3 completed
 Running routing......
 [60%] Routing Phase 0 completed
@@ -32,5 +32,5 @@ Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labir
 Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.rpt.html" completed
 Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.rpt.txt" completed
 Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.tr.html" completed
-Thu Dec 15 15:15:05 2022
+Thu Dec 15 15:30:35 2022
 

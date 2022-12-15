@@ -14,7 +14,6 @@ entity top_gowin_ide is
 end top_gowin_ide;
 
 architecture rtl of top_gowin_ide is
-
     component comandos_sequencia is
         generic (spi_master_clock_in : integer := 27_000_000;
                 spi_master_clock_out : integer := 13_500_000);
@@ -85,11 +84,12 @@ architecture rtl of top_gowin_ide is
     signal s_clk, s_ce, s_oce, s_reset : std_logic;
     signal s_ad : std_logic_vector(14 downto 0);
 
-    signal teste_addr : std_logic_vector (14 downto 0);
     signal s_entrada_pontuacao : integer := 0;
     signal permit : std_logic := '1';
     signal s_saida_reset : std_logic := '0';
 
+    -- preferi colocar s_ na frente de cada porta de componente, depois só liguei as portas de cada componente
+    -- depois trabalho com esses sinais seja para entrada ou pra saida
 begin
     pll : Gowin_rPLL port map (clkout => pll_clkout, clkin => sys_clk);
 
@@ -103,46 +103,56 @@ begin
 
     sprites0 : sprites port map (dout => s_dout, clk => s_clk, oce => s_oce, ce => s_ce, reset => s_reset, ad => s_ad);
 
+    -- clock comandos
     cmd_clk <= sys_clk; -- when cmd_free_buffer = '0' else '0';
+    -- clock dados
     s_f_clk_in <= pll_clkout; -- when cmd_free_buffer = '1' else '0';
 
-    -- temporario, tirar foto do gato
-    teste_addr <= s_flash_address;
-    
-
-    -- rom1 porta parametros
+    -- parametros da rom de sprites
     s_clk <= pll_clkout;
     s_oce <= '0';
     s_ce <= '1';
     s_reset <= '0';
     s_ad <= s_flash_address;
 
-    -- parametros memoria vitoria
+    -- parametros da rom de imagem
     s_imagem_clk <= pll_clkout;
     s_imagem_ce <= '1';
     s_imagem_oce <= '0';
     s_imagem_reset <= '0';
     s_imagem_ad <= s_flash_address;
 
-    -- override do labirinto pro gato
+    -- interface para botao de iniciar setup do display
     cmd_seq_enable <= start;
+    -- interface para iniciar escrita de pixels apos liberacao do buffer
     s_comando_escreve <= cmd_free_buffer;
 
+    -- controle de buffer
     top_cs <= cmd_cs when cmd_free_buffer = '0' else s_f_cs;
     top_mosi <= cmd_mosi when cmd_free_buffer = '0' else s_f_mosi;
     top_sck <= cmd_sck when cmd_free_buffer = '0' else s_f_sck;
     top_dc <= cmd_dc when cmd_free_buffer = '0' else s_f_dc;
 
+    -- sinalização externa
     led_setup <= cmd_free_buffer;
-
     top_led_sck <= not cmd_sck when cmd_free_buffer = '0' else not s_f_sck;
     top_led_mosi <= not cmd_mosi when cmd_free_buffer = '0' else not s_f_mosi;
+    led_idle <= s_led_lock;
+    -- aqui voce pode apertar para enviar outra frame, é um sinal ativo alto
+    -- no entanto, optamos por deixar sendo escrito constatemente
+    s_enable <= '1'; -- vram_write_cmd; 
 
 
---     decode para reduzir memoria,o labirinto tem no maximo 3 cores
+    -- decode para reduzir memoria,o labirinto tem no maximo 3 cores
     s_flash_data <= "111111111111111111" when s_dout = "11" and s_entrada_fim_jogo = '0' else
-                "000000000000000000" when s_dout = "00" and s_entrada_fim_jogo = '0' else s_saida_imagem when s_entrada_fim_jogo = '1';
+                "000000000000000000" when s_dout = "00" and s_entrada_fim_jogo = '0' else 
+                s_saida_imagem when s_entrada_fim_jogo = '1';
 
+    -- IO para pontuação e fim de jogo
+    saida_reset <= s_saida_reset;
+    s_entrada_pontuacao <= to_integer(unsigned(entrada_pontuacao));
+
+    -- limite de pontuação
     process (permit, sys_clk, s_entrada_pontuacao)
     begin
         if rising_edge(sys_clk) then
@@ -153,9 +163,7 @@ begin
         end if;
     end process;
 
-    saida_reset <= s_saida_reset;
-    s_entrada_pontuacao <= to_integer(unsigned(entrada_pontuacao));
-
+    -- decode para offset dos sprites referente ao numero BCD
     process (s_entrada_pontuacao, s_input_offset_x, s_input_offset_y)
     begin
         case s_entrada_pontuacao is
@@ -193,10 +201,4 @@ begin
             null;
         end case;
     end process;
-
-    -- comando inicial e sinalizaacao
-    s_enable <= vram_write_cmd;
-    led_idle <= s_led_lock;
-
-
 end architecture;

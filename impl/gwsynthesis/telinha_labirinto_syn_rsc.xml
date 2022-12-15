@@ -6,7 +6,7 @@
             <SubModule name="div0" Register="3" Lut="4"/>
         </SubModule>
     </SubModule>
-    <SubModule name="data" Register="124" Alu="51" Lut="181" Dsp="2">
+    <SubModule name="data" Register="124" Alu="51" Lut="185" Dsp="2">
         <SubModule name="div0" Register="2" Lut="1"/>
     </SubModule>
     <SubModule name="gato" Register="4" Lut="183" Bsram="19"/>
