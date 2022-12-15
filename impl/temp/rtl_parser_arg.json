@@ -1,0 +1,65 @@
+{
+ "Files" : [
+  {
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_dpb/gowin_dpb.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/comandos_sequencia.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/divisor.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/sprites.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_rpll/gowin_rpll.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+   "Type" : "vhdl"
+  },
+  {
+   "Library" : "work",
+   "Path" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd",
+   "Type" : "vhdl"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/impl/temp/rtl_parser.result",
+ "Top" : "top_gowin_ide",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

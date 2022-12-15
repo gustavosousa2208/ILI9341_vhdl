@@ -1,0 +1,28 @@
+//Copyright (C)2014-2022 Gowin Semiconductor Corporation.
+//All rights reserved. 
+//File Title: Physical Constraints file
+//GOWIN Version: 1.9.8.07
+//Part Number: GW1NR-LV9QN88PC6/I5
+//Device: GW1NR-9C
+//Created Time: Thu 12 15 11:11:25 2022
+
+IO_LOC "top_dc" 37;
+IO_PORT "top_dc" PULL_MODE=UP DRIVE=8;
+IO_LOC "top_sck" 39;
+IO_PORT "top_sck" PULL_MODE=UP DRIVE=8;
+IO_LOC "top_cs" 38;
+IO_PORT "top_cs" PULL_MODE=UP DRIVE=8;
+IO_LOC "top_mosi" 36;
+IO_PORT "top_mosi" PULL_MODE=UP DRIVE=8;
+IO_LOC "entrada_pontuacao[3]" 56;
+IO_PORT "entrada_pontuacao[3]" PULL_MODE=UP;
+IO_LOC "entrada_pontuacao[2]" 57;
+IO_PORT "entrada_pontuacao[2]" PULL_MODE=UP;
+IO_LOC "entrada_pontuacao[1]" 68;
+IO_PORT "entrada_pontuacao[1]" PULL_MODE=UP;
+IO_LOC "entrada_pontuacao[0]" 69;
+IO_PORT "entrada_pontuacao[0]" PULL_MODE=UP;
+IO_LOC "start" 4;
+IO_PORT "start" PULL_MODE=UP;
+IO_LOC "sys_clk" 52;
+IO_PORT "sys_clk" PULL_MODE=UP;

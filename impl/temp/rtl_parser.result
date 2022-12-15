@@ -1,0 +1,106 @@
+[
+ {
+  "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_dpb/gowin_dpb.v",
+  "InstLine" : 9,
+  "InstName" : "Gowin_DPB",
+  "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_dpb/gowin_dpb.v",
+  "ModuleLine" : 9,
+  "ModuleName" : "Gowin_DPB"
+ },
+ {
+  "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.v",
+  "InstLine" : 9,
+  "InstName" : "Gowin_pROM",
+  "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.v",
+  "ModuleLine" : 9,
+  "ModuleName" : "Gowin_pROM"
+ },
+ {
+  "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd",
+  "InstLine" : 12,
+  "InstName" : "Gowin_pROM",
+  "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gowin_prom.vhd",
+  "ModuleLine" : 12,
+  "ModuleName" : "Gowin_pROM"
+ },
+ {
+  "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+  "InstLine" : 5,
+  "InstName" : "top_gowin_ide",
+  "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+  "ModuleLine" : 5,
+  "ModuleName" : "top_gowin_ide",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+    "InstLine" : 94,
+    "InstName" : "pll",
+    "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_rpll/gowin_rpll.vhd",
+    "ModuleLine" : 12,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+    "InstLine" : 96,
+    "InstName" : "cmd",
+    "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/comandos_sequencia.vhd",
+    "ModuleLine" : 6,
+    "ModuleName" : "comandos_sequencia",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/comandos_sequencia.vhd",
+      "InstLine" : 34,
+      "InstName" : "spi0",
+      "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd",
+      "ModuleLine" : 6,
+      "ModuleName" : "spi_transmissao_byte",
+      "SubInsts" : [
+       {
+        "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/spi_transmissao_byte.vhd",
+        "InstLine" : 34,
+        "InstName" : "div0",
+        "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/divisor.vhd",
+        "ModuleLine" : 6,
+        "ModuleName" : "divisor"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+    "InstLine" : 99,
+    "InstName" : "data",
+    "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd",
+    "ModuleLine" : 6,
+    "ModuleName" : "memoria_para_display",
+    "SubInsts" : [
+     {
+      "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd",
+      "InstLine" : 60,
+      "InstName" : "div0",
+      "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/divisor.vhd",
+      "ModuleLine" : 6,
+      "ModuleName" : "divisor"
+     }
+    ]
+   },
+   {
+    "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+    "InstLine" : 102,
+    "InstName" : "gato",
+    "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/gato_colorido.vhd",
+    "ModuleLine" : 12,
+    "ModuleName" : "gato_colorido"
+   },
+   {
+    "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/top_gowin_ide.vhd",
+    "InstLine" : 104,
+    "InstName" : "sprites0",
+    "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_prom/sprites.vhd",
+    "ModuleLine" : 12,
+    "ModuleName" : "sprites"
+   }
+  ]
+ }
+]

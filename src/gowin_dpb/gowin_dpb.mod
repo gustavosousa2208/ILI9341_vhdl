@@ -1,0 +1,25 @@
+-series GW1NR
+-device GW1NR-9C
+-package QFN88P
+-part_number GW1NR-LV9QN88PC6/I5
+
+
+-mod_name Gowin_DPB
+-file_name gowin_dpb
+-path C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/gowin_dpb/
+-type RAM_DP
+-file_type vhdl
+-bram_b true
+-dev_type GW1NR-9C
+-depth_0 19200
+-depth_1 19200
+-width_0 2
+-width_1 2
+-read_mode_0 bypass
+-read_mode_1 bypass
+-write_mode_0 normal
+-write_mode_1 normal
+-speed true
+-reset_mode async
+-init_file C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\labirinto_virado.mi
+-init_match port_A

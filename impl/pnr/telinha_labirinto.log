@@ -1,0 +1,36 @@
+Reading netlist file: "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto.vg"
+Parsing netlist file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto.vg" completed
+Processing netlist completed
+Reading constraint file: "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\telinha_labirinto.cst"
+Physical Constraint parsed completed
+Running placement......
+[10%] Placement Phase 0 completed
+[20%] Placement Phase 1 completed
+[30%] Placement Phase 2 completed
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_entrada_fim_jogo"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n258_6"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "s_clock_3" and "pll/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_clock_3"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "s_entrada_fim_jogo" and "pll/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (TA1117) : Can't calculate clocks' relationship between: "n874_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
+[50%] Placement Phase 3 completed
+Running routing......
+[60%] Routing Phase 0 completed
+[70%] Routing Phase 1 completed
+[80%] Routing Phase 2 completed
+WARN  (PR1014) : Generic routing resource will be used to clock signal 'start_d' by the specified constraint. And then it may lead to the excessive delay or skew
+[90%] Routing Phase 3 completed
+Running timing analysis......
+[95%] Timing analysis completed
+Placement and routing completed
+Bitstream generation in progress......
+Bitstream generation completed
+Running power analysis......
+[100%] Power analysis completed
+Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.power.html" completed
+Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.pin.html" completed
+Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.rpt.html" completed
+Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.rpt.txt" completed
+Generate file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\pnr\telinha_labirinto.tr.html" completed
+Thu Dec 15 12:37:16 2022
+
