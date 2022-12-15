@@ -16,7 +16,7 @@ end divisor;
 
 architecture rtl of divisor is
 	signal s_clock : std_logic := '0';
-	constant count_to : integer := (input_clock/output_clock);
+	constant count_to : integer := ((input_clock/2)/output_clock);
 begin
 	process(clk_in)
 		variable counter : integer range 0 to count_to := 0;
