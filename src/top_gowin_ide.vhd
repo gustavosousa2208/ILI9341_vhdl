@@ -158,7 +158,7 @@ begin
     s_enable <= '1'; -- vram_write_cmd; 
 
 
-    -- decode para reduzir memoria,o labirinto tem no maximo 3 cores
+    -- decode para reduzir memoria,o sprite tem no maximo 3 cores
     s_flash_data <= "111111111111111111" when s_dout = "11" and s_entrada_fim_jogo = '0' else
                 "000000000000000000" when s_dout = "00" and s_entrada_fim_jogo = '0' else 
                 s_saida_imagem when s_entrada_fim_jogo = '1';

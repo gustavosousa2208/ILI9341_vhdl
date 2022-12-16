@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="display_cyclone_2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|memoria_para_display:inst2|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_nto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|memoria_para_display:inst2|lpm_divide:Div2" CBX_FILE_NAME="lpm_divide_nto.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|rom_imagem:inst3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_k8c1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

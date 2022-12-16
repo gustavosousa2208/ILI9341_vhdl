@@ -1,0 +1,133 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'sys_clk'
+Slack : -46.928
+TNS   : -12461.190
+
+Type  : Slow Model Setup 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -5.165
+TNS   : -511.973
+
+Type  : Slow Model Setup 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -2.319
+TNS   : -8.243
+
+Type  : Slow Model Setup 'comandos_sequencia:inst|btn_on'
+Slack : -0.819
+TNS   : -6.552
+
+Type  : Slow Model Hold 'sys_clk'
+Slack : -2.687
+TNS   : -9.707
+
+Type  : Slow Model Hold 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -1.616
+TNS   : -7.849
+
+Type  : Slow Model Hold 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -0.064
+TNS   : -0.064
+
+Type  : Slow Model Hold 'comandos_sequencia:inst|btn_on'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Slow Model Removal 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -0.026
+TNS   : -0.026
+
+Type  : Slow Model Minimum Pulse Width 'sys_clk'
+Slack : -1.814
+TNS   : -1126.615
+
+Type  : Slow Model Minimum Pulse Width 'enable_startup_timer'
+Slack : -1.631
+TNS   : -2.853
+
+Type  : Slow Model Minimum Pulse Width 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -0.611
+TNS   : -147.862
+
+Type  : Slow Model Minimum Pulse Width 'comandos_sequencia:inst|btn_on'
+Slack : -0.611
+TNS   : -9.776
+
+Type  : Slow Model Minimum Pulse Width 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -0.611
+TNS   : -7.332
+
+Type  : Slow Model Minimum Pulse Width 'comandos_sequencia:inst|lock'
+Slack : -0.611
+TNS   : -1.222
+
+Type  : Fast Model Setup 'sys_clk'
+Slack : -18.016
+TNS   : -4768.931
+
+Type  : Fast Model Setup 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -1.494
+TNS   : -134.874
+
+Type  : Fast Model Setup 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -0.532
+TNS   : -0.532
+
+Type  : Fast Model Setup 'comandos_sequencia:inst|btn_on'
+Slack : -0.125
+TNS   : -1.000
+
+Type  : Fast Model Hold 'sys_clk'
+Slack : -1.717
+TNS   : -9.797
+
+Type  : Fast Model Hold 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -1.243
+TNS   : -6.003
+
+Type  : Fast Model Hold 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -0.258
+TNS   : -0.335
+
+Type  : Fast Model Hold 'comandos_sequencia:inst|btn_on'
+Slack : 0.266
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Fast Model Removal 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -0.023
+TNS   : -0.023
+
+Type  : Fast Model Minimum Pulse Width 'sys_clk'
+Slack : -1.423
+TNS   : -884.872
+
+Type  : Fast Model Minimum Pulse Width 'enable_startup_timer'
+Slack : -1.380
+TNS   : -2.380
+
+Type  : Fast Model Minimum Pulse Width 'memoria_para_display:inst2|divisor:div0|s_clock'
+Slack : -0.500
+TNS   : -121.000
+
+Type  : Fast Model Minimum Pulse Width 'comandos_sequencia:inst|btn_on'
+Slack : -0.500
+TNS   : -8.000
+
+Type  : Fast Model Minimum Pulse Width 'comandos_sequencia:inst|spi_transmissao_byte:spi0|divisor:div0|s_clock'
+Slack : -0.500
+TNS   : -6.000
+
+Type  : Fast Model Minimum Pulse Width 'comandos_sequencia:inst|lock'
+Slack : -0.500
+TNS   : -1.000
+
+------------------------------------------------------------
