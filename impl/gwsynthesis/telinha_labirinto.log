@@ -39,13 +39,14 @@ Processing 'memoria_para_display(spi_input_clock=100000000,spi_output_clock=1000
 Processing 'divisor(input_clock=100000000,output_clock=100000000)(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
 Processing 'gato_colorido(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
 Processing 'sprites(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd":12)
-WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":147)
-WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":203)
+WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":162)
+WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":218)
 NOTE  (EX0101) : Current top module is "top_gowin_ide"
 WARN  (EX0211) : The output port "reset" of module "spi_transmissao_byte" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":10)
 WARN  (EX0211) : The output port "led_writing" of module "top_gowin_ide" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
 WARN  (EX0211) : The output port "led_done" of module "top_gowin_ide" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
 [5%] Running netlist conversion ...
+WARN  (CV0016) : Input start is unused("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":9)
 WARN  (CV0016) : Input vram_write_cmd is unused("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":9)
 WARN  (CV0003) : Output "led_writing" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
 WARN  (CV0003) : Output "led_done" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
@@ -68,9 +69,9 @@ Running technical mapping ...
 [95%] Generate netlist file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto.vg" completed
 WARN  (CK3000) : Can't calculate clocks' relationship between: "s_clock_3" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "s_entrada_fim_jogo" and "pll/rpll_inst/CLKOUT.default_gen_clk"
-WARN  (CK3000) : Can't calculate clocks' relationship between: "n861_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "n956_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_entrada_fim_jogo"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_clock_3"
-WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n245_6"
+WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n340_6"
 [100%] Generate report file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto_syn.rpt.html" completed
 GowinSynthesis finish

@@ -22,8 +22,8 @@ architecture rtl of top_gowin_ide is
             sck, mosi, dc,out_btn_on, free_buffer, reset : out std_logic);
     end component;
 
-    signal cmd_clk, cmd_seq_enable, cmd_cs, cmd_sck, cmd_mosi, cmd_dc, cmd_out_btn_on, cmd_free_buffer, cmd_reset : std_logic;
-
+    signal cmd_clk, cmd_cs, cmd_sck, cmd_mosi, cmd_dc, cmd_out_btn_on, cmd_free_buffer, cmd_reset : std_logic;
+    signal cmd_seq_enable : std_logic := '0';
     component memoria_para_display is 
 	generic (spi_input_clock : integer := 27_000_000;
 			spi_output_clock : integer := 13_500_000);
@@ -122,10 +122,26 @@ begin
     s_imagem_reset <= '0';
     s_imagem_ad <= s_flash_address;
 
-    -- interface para botao de iniciar setup do display
-    cmd_seq_enable <= start;
+    -- interface para botao de iniciar setup do display, ative se quiser o botao
+    -- cmd_seq_enable <= start;
     -- interface para iniciar escrita de pixels apos liberacao do buffer
     s_comando_escreve <= cmd_free_buffer;
+
+    process (sys_clk)
+        variable conta : integer range SYSTEM_CLK_IN downto 0:= 1;
+    begin
+        if rising_edge(sys_clk) then
+            if conta = SYSTEM_CLK_IN then
+                cmd_seq_enable <= '1';
+                conta := SYSTEM_CLK_IN;
+                led_idle <= '0';
+            else
+                cmd_seq_enable <= '0';
+                led_idle <= '1';
+                conta := conta + 1;
+            end if;
+        end if;
+    end process;
 
     -- controle de buffer
     top_cs <= cmd_cs when cmd_free_buffer = '0' else s_f_cs;
@@ -137,7 +153,6 @@ begin
     led_setup <= cmd_free_buffer;
     top_led_sck <= not cmd_sck when cmd_free_buffer = '0' else not s_f_sck;
     top_led_mosi <= not cmd_mosi when cmd_free_buffer = '0' else not s_f_mosi;
-    led_idle <= s_led_lock;
     -- aqui voce pode apertar para enviar outra frame, é um sinal ativo alto
     -- no entanto, optamos por deixar sendo escrito constatemente
     s_enable <= '1'; -- vram_write_cmd; 
