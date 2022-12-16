@@ -17,6 +17,9 @@
         <File path="src/spi_transmissao_byte.vhd" type="file.vhdl" enable="1"/>
         <File path="src/top_gowin_ide.vhd" type="file.vhdl" enable="1"/>
         <File path="src/telinha_labirinto.cst" type="file.cst" enable="1"/>
+        <File path="src/001.mi" type="file.other" enable="1"/>
+        <File path="src/3cores.mi" type="file.other" enable="1"/>
+        <File path="src/batata.mi" type="file.other" enable="1"/>
         <File path="src/colorido.mi" type="file.other" enable="1"/>
         <File path="src/gatinho.mi" type="file.other" enable="1"/>
         <File path="src/labirinto.mi" type="file.other" enable="1"/>

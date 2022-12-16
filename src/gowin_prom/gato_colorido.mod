@@ -14,4 +14,4 @@
 -width 18
 -read_mode bypass
 -reset_mode async
--init_file C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\colorido.mi
+-init_file C:\Users\gusta\Desktop\code\Scripts Python\imagens\batata.mi
