@@ -55,6 +55,10 @@ architecture rtl_flash of memoria_para_display is
 	signal s_offset_y : integer := 0;
 	signal s_offset_x : integer := 0;
     signal s_entrada_fim_jogo : std_logic;
+    -- mudar para o valor de linha ao redimensionar a imagem
+    -- no momento o modo é 120x160, então precisa colocar 120
+    signal constante_de_linha : integer range 320 downto 0 := 120;
+
 	
 begin
 	div0 : divisor generic map (input_clock => spi_input_clock, output_clock => spi_input_clock)
@@ -212,7 +216,7 @@ begin
 	-- o endereço tem uma escala para zoom e offset para movimentação
 	-- como vhdl vai arredondar para baixo, para sair de 0 a 1 numa escala de 2, temos que contar dois endereços
 	-- isso faz o zoom
-	flash_address <= std_logic_vector(to_unsigned(((coluna/escala) + s_offset_x) + 120*((linha/escala) + s_offset_y), 15));
+	flash_address <= std_logic_vector(to_unsigned(((coluna/escala) + s_offset_x) + constante_de_linha*((linha/escala) + s_offset_y), 15));
 
     s_entrada_fim_jogo <= entrada_fim_jogo;
 

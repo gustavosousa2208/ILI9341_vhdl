@@ -77,7 +77,7 @@
     "SubInsts" : [
      {
       "InstFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/memoria_para_display.vhd",
-      "InstLine" : 60,
+      "InstLine" : 64,
       "InstName" : "div0",
       "ModuleFile" : "C:/Users/gusta/OneDrive/Documentos/Projetos_Quartus/telinha_labirinto/src/divisor.vhd",
       "ModuleLine" : 6,
