@@ -28,4 +28,8 @@ IDE do Quartus: dependendo do FPGA a imagem pode não caber, além disso, ao tro
 -- no momento o modo é 120x160, então precisa colocar 120
 signal constante_de_linha : integer range 320 downto 0 := 60;
 ```
-O padrão deve ser 60, pois a resolução é 60x80
+O padrão deve ser 60, pois a resolução é 60x80, além disso, alterar escala no trecho:
+```vhdl
+-- seletor de escala com base no fim de jogo
+escala <= 4 when (s_entrada_fim_jogo = '1') else 16;
+```
