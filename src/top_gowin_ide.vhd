@@ -96,7 +96,7 @@ begin
     cmd : comandos_sequencia generic map (spi_master_clock_in => SYSTEM_CLK_IN, spi_master_clock_out => DATA_WRITE_CLK_OUT)
         port map (spi_clk_in => cmd_clk, seq_enable => cmd_seq_enable, cs_out => cmd_cs, sck => cmd_sck, mosi => cmd_mosi, dc => cmd_dc, out_btn_on => cmd_out_btn_on, free_buffer => cmd_free_buffer, reset => cmd_reset);
     
-    data : memoria_para_display generic map (spi_input_clock => PLL_CLK_OUT, spi_output_clock => PLL_CLK_OUT) 
+    data : memoria_para_display generic map (spi_input_clock => SYSTEM_CLK_IN, spi_output_clock => SYSTEM_CLK_IN) 
         port map (entrada_fim_jogo => s_entrada_fim_jogo, input_offset_y => s_input_offset_y, input_offset_x => s_input_offset_x, flash_address => s_flash_address, flash_data => s_flash_data, f_clk_in => s_f_clk_in, enable => s_enable, comando_escreve => s_comando_escreve, flash_oe => s_flash_oe, flash_we => s_flash_we, flash_reset => s_flash_reset, f_mosi => s_f_mosi, f_cs => s_f_cs, f_sck => s_f_sck, f_dc => s_f_dc);
     
     gato : gato_colorido port map (dout => s_saida_imagem, clk => s_imagem_clk, oce => s_imagem_oce, ce => s_imagem_ce, reset => s_imagem_reset, ad => s_imagem_ad);
@@ -106,17 +106,17 @@ begin
     -- clock comandos
     cmd_clk <= sys_clk; -- when cmd_free_buffer = '0' else '0';
     -- clock dados
-    s_f_clk_in <= pll_clkout; -- when cmd_free_buffer = '1' else '0';
+    s_f_clk_in <= sys_clk; -- when cmd_free_buffer = '1' else '0';
 
     -- parametros da rom de sprites
-    s_clk <= pll_clkout;
+    s_clk <= sys_clk;
     s_oce <= '0';
     s_ce <= '1';
     s_reset <= '0';
     s_ad <= s_flash_address;
 
     -- parametros da rom de imagem
-    s_imagem_clk <= pll_clkout;
+    s_imagem_clk <= sys_clk;
     s_imagem_ce <= '1';
     s_imagem_oce <= '0';
     s_imagem_reset <= '0';
@@ -124,6 +124,7 @@ begin
 
     -- interface para botao de iniciar setup do display, ative se quiser o botao
     -- cmd_seq_enable <= start;
+
     -- interface para iniciar escrita de pixels apos liberacao do buffer
     s_comando_escreve <= cmd_free_buffer;
 

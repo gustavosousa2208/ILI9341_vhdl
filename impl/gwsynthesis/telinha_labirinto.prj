@@ -4,23 +4,23 @@
     <Version>beta</Version>
     <Device id="GW1NR-9C" package="QFN88P" speed="6" partNumber="GW1NR-LV9QN88PC6/I5"/>
     <FileList>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_dpb\gowin_dpb.v" type="verilog"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.v" type="verilog"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd" type="vhdl"/>
-        <File path="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_dpb\gowin_dpb.v" type="verilog"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.v" type="verilog"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gato_colorido.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\sprites.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\gowin_rpll\gowin_rpll.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\memoria_para_display.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd" type="vhdl"/>
+        <File path="C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd" type="vhdl"/>
     </FileList>
     <OptionList>
         <Option type="disable_insert_pad" value="0"/>
         <Option type="dsp_balance" value="0"/>
         <Option type="looplimit" value="2000"/>
-        <Option type="output_file" value="C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto.vg"/>
+        <Option type="output_file" value="C:\Users\gusta\source\ILI9341_vhdl\impl\gwsynthesis\telinha_labirinto.vg"/>
         <Option type="print_all_synthesis_warning" value="1"/>
         <Option type="ram_rw_check" value="1"/>
         <Option type="top_module" value="top_gowin_ide"/>

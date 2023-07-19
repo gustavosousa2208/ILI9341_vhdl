@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Module name="top_gowin_ide" Register="52" Lut="66">
+<Module name="top_gowin_ide" Register="52" Lut="65">
     <SubModule name="pll"/>
     <SubModule name="cmd" Register="16" Lut="19">
-        <SubModule name="spi0" Register="16" Lut="20">
+        <SubModule name="spi0" Register="16" Lut="18">
             <SubModule name="div0" Register="3" Lut="4"/>
         </SubModule>
     </SubModule>
-    <SubModule name="data" Register="124" Alu="51" Lut="190" Dsp="2">
+    <SubModule name="data" Register="124" Alu="51" Lut="185" Dsp="2">
         <SubModule name="div0" Register="2" Lut="1"/>
     </SubModule>
     <SubModule name="gato" Register="4" Lut="183" Bsram="19"/>

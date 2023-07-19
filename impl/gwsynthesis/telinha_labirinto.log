@@ -1,57 +1,55 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_dpb\gowin_dpb.v'
-Analyzing Verilog file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.v'
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd'
-Analyzing entity 'comandos_sequencia'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":6)
-Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":14)
-WARN  (EX4664) : Formal port 'cs_out' of mode 'out' cannot be associated with actual port 'cs_out' of mode 'buffer'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":38)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd'
-Analyzing entity 'divisor'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
-Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":17)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd'
-Analyzing entity 'gato_colorido'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
-Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":23)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd'
-Analyzing entity 'gowin_prom'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd":12)
-Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gowin_prom.vhd":23)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd'
-Analyzing entity 'sprites'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd":12)
-Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd":23)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd'
-Analyzing entity 'gowin_rpll'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd":12)
-Analyzing architecture 'behavioral'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd":19)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd'
-Analyzing entity 'memoria_para_display'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd":6)
-Analyzing architecture 'rtl_flash'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd":18)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd'
-Analyzing entity 'spi_transmissao_byte'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":6)
-Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":15)
-Analyzing VHDL file 'C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd'
-Analyzing entity 'top_gowin_ide'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":5)
-Analyzing architecture 'rtl'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":16)
-Processing 'top_gowin_ide(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":5)
-Processing 'Gowin_rPLL(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_rpll\gowin_rpll.vhd":12)
-Processing 'comandos_sequencia(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\comandos_sequencia.vhd":6)
-Processing 'spi_transmissao_byte(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":6)
-Processing 'divisor(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
-Processing 'memoria_para_display(spi_input_clock=100000000,spi_output_clock=100000000)(rtl_flash)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\memoria_para_display.vhd":6)
-Processing 'divisor(input_clock=100000000,output_clock=100000000)(rtl)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\divisor.vhd":6)
-Processing 'gato_colorido(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\gato_colorido.vhd":12)
-Processing 'sprites(Behavioral)'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\gowin_prom\sprites.vhd":12)
-WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":162)
-WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":218)
+Analyzing Verilog file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_dpb\gowin_dpb.v'
+Analyzing Verilog file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.v'
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd'
+Analyzing entity 'comandos_sequencia'("C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd":6)
+Analyzing architecture 'rtl'("C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd":14)
+WARN  (EX4664) : Formal port 'cs_out' of mode 'out' cannot be associated with actual port 'cs_out' of mode 'buffer'("C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd":38)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd'
+Analyzing entity 'divisor'("C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd":6)
+Analyzing architecture 'rtl'("C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd":17)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gato_colorido.vhd'
+Analyzing entity 'gato_colorido'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gato_colorido.vhd":12)
+Analyzing architecture 'behavioral'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gato_colorido.vhd":23)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.vhd'
+Analyzing entity 'gowin_prom'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.vhd":12)
+Analyzing architecture 'behavioral'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gowin_prom.vhd":23)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\sprites.vhd'
+Analyzing entity 'sprites'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\sprites.vhd":12)
+Analyzing architecture 'behavioral'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\sprites.vhd":23)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\gowin_rpll\gowin_rpll.vhd'
+Analyzing entity 'gowin_rpll'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_rpll\gowin_rpll.vhd":12)
+Analyzing architecture 'behavioral'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_rpll\gowin_rpll.vhd":19)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\memoria_para_display.vhd'
+Analyzing entity 'memoria_para_display'("C:\Users\gusta\source\ILI9341_vhdl\src\memoria_para_display.vhd":6)
+Analyzing architecture 'rtl_flash'("C:\Users\gusta\source\ILI9341_vhdl\src\memoria_para_display.vhd":18)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd'
+Analyzing entity 'spi_transmissao_byte'("C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd":6)
+Analyzing architecture 'rtl'("C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd":15)
+Analyzing VHDL file 'C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd'
+Analyzing entity 'top_gowin_ide'("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":5)
+Analyzing architecture 'rtl'("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":16)
+Processing 'top_gowin_ide(rtl)'("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":5)
+Processing 'Gowin_rPLL(Behavioral)'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_rpll\gowin_rpll.vhd":12)
+Processing 'comandos_sequencia(rtl)'("C:\Users\gusta\source\ILI9341_vhdl\src\comandos_sequencia.vhd":6)
+Processing 'spi_transmissao_byte(rtl)'("C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd":6)
+Processing 'divisor(rtl)'("C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd":6)
+Processing 'memoria_para_display(spi_output_clock=27000000)(rtl_flash)'("C:\Users\gusta\source\ILI9341_vhdl\src\memoria_para_display.vhd":6)
+Processing 'divisor(output_clock=27000000)(rtl)'("C:\Users\gusta\source\ILI9341_vhdl\src\divisor.vhd":6)
+Processing 'gato_colorido(Behavioral)'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\gato_colorido.vhd":12)
+Processing 'sprites(Behavioral)'("C:\Users\gusta\source\ILI9341_vhdl\src\gowin_prom\sprites.vhd":12)
+WARN  (EX4160) : Latch inferred for net 's_flash_data[17]'("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":163)
+WARN  (EX4160) : Latch inferred for net 's_input_offset_x[31]'("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":219)
 NOTE  (EX0101) : Current top module is "top_gowin_ide"
-WARN  (EX0211) : The output port "reset" of module "spi_transmissao_byte" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":10)
-WARN  (EX0211) : The output port "led_writing" of module "top_gowin_ide" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
-WARN  (EX0211) : The output port "led_done" of module "top_gowin_ide" has no driver("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
+WARN  (EX0211) : The output port "reset" of module "spi_transmissao_byte" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd":10)
+WARN  (EX0211) : The output port "led_writing" of module "top_gowin_ide" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":10)
+WARN  (EX0211) : The output port "led_done" of module "top_gowin_ide" has no driver, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":10)
 [5%] Running netlist conversion ...
-WARN  (CV0016) : Input start is unused("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":9)
-WARN  (CV0016) : Input vram_write_cmd is unused("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":9)
-WARN  (CV0003) : Output "led_writing" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
-WARN  (CV0003) : Output "led_done" has undriven bits, assigning undriven bits to Z, simulation mismatch possible("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\top_gowin_ide.vhd":10)
+WARN  (CV0016) : Input start is unused("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":9)
+WARN  (CV0016) : Input vram_write_cmd is unused("C:\Users\gusta\source\ILI9341_vhdl\src\top_gowin_ide.vhd":9)
 Running device independent optimization ...
-WARN  (DI0002) : Asynchronous register "estados" initial values do not match with the Gowin library, simulation mismatch possible("C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\src\spi_transmissao_byte.vhd":74)
+WARN  (DI0002) : Asynchronous register "estados" initial values do not match with the Gowin library, simulation mismatch possible("C:\Users\gusta\source\ILI9341_vhdl\src\spi_transmissao_byte.vhd":74)
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
 [25%] Optimizing Phase 2 completed
@@ -66,12 +64,12 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto.vg" completed
+[95%] Generate netlist file "C:\Users\gusta\source\ILI9341_vhdl\impl\gwsynthesis\telinha_labirinto.vg" completed
 WARN  (CK3000) : Can't calculate clocks' relationship between: "s_clock_3" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "s_entrada_fim_jogo" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "n956_8" and "pll/rpll_inst/CLKOUT.default_gen_clk"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_entrada_fim_jogo"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "s_clock_3"
 WARN  (CK3000) : Can't calculate clocks' relationship between: "pll/rpll_inst/CLKOUT.default_gen_clk" and "n340_6"
-[100%] Generate report file "C:\Users\gusta\OneDrive\Documentos\Projetos_Quartus\telinha_labirinto\impl\gwsynthesis\telinha_labirinto_syn.rpt.html" completed
+[100%] Generate report file "C:\Users\gusta\source\ILI9341_vhdl\impl\gwsynthesis\telinha_labirinto_syn.rpt.html" completed
 GowinSynthesis finish

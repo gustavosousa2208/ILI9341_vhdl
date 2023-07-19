@@ -2,15 +2,15 @@
 | Copyright (C)2014-2022 Gowin Semiconductor Corporation.
 | All rights reserved.
 | File Title: IBIS file
-| GOWIN Version: V1.9.8.07
+| GOWIN Version: V1.9.8.09
 | Part Number: GW1NR-LV9QN88PC6/I5
 | Device: GW1NR-9C
-| Created Time: Thu Dec 15 23:32:22 2022
+| Created Time: Sat Jun 24 20:41:17 2023
 |************************************************************************
 [IBIS ver] 5.0
 [File Rev] 1.0
 [File Name] telinha_labirinto.ibs
-[Date] Thu Dec 15 23:32:22 2022
+[Date] Sat Jun 24 20:41:17 2023
 [Source] Pre_simulation netlist
 [Notes] Version 1.0 IBIS Model
 [Copyright] Copyright 2022, Gowinsemi inc.
@@ -35,17 +35,17 @@ C_pkg   2.000pF           1.000pF             4.000pF
 68      entrada_pontuacao[1] lvc18_io_p           
 57      entrada_pontuacao[2] lvc18_io_p           
 56      entrada_pontuacao[3] lvc18_io_p           
-35      led_setup            driver_1v8_8ma_fast  
-34      led_writing          driver_1v8_8ma_fast  
+83      led_setup            driver_1v8_8ma_fast  
+50      led_writing          driver_1v8_8ma_fast  
 86      led_done             driver_1v8_8ma_fast  
 31      top_led_sck          driver_1v8_8ma_fast  
-33      top_led_mosi         driver_1v8_8ma_fast  
+79      top_led_mosi         driver_1v8_8ma_fast  
 36      top_mosi             driver_1v8_8ma_fast  
 38      top_cs               driver_1v8_8ma_fast  
 39      top_sck              driver_1v8_8ma_fast  
 37      top_dc               driver_1v8_8ma_fast  
 10      led_idle             driver_1v8_8ma_fast  
-82      saida_reset          driver_1v8_8ma_fast  
+53      saida_reset          driver_1v8_8ma_fast  
 |
 |************************************************************************
 |                  Model driver_1v8_8ma_fast
