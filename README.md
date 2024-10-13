@@ -1,5 +1,6 @@
 # ILI9341_vhdl
-Driver para display ILI9341, lendo sprites a partir de frame buffer. Mostrando número BCD até numero escolhido, para mostrar imagem maior. No Quartus, as funções de pontuação podem ser usadas ao ser criado um bloco adicional no arquivo .bdf, ou seja, no quartus o foco é somente mandar a imagem constantemente.
+Driver para display ILI9341, lê sprites a partir de frame buffer (bloco de RAM). Mostrando contagem de número BCD até um número máximo escolhido. 
+Projeto criado como trabalho de conclusão da disciplina de Técnicas Avançadas em Eletrônica Digital (TAED), apenas parte do contador, fazendo uso do display, como sugerido pelo professor, pode ser aplicado para qualquer minigame com saída de número binário.
 
 TODO:
 - Melhorar a aparência do esquema no Quartus
